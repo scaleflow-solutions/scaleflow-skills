@@ -1,5 +1,5 @@
 ---
-name: scaleflow-prompt-architect
+name: prompt-architect
 description: |
   Generates production-ready prompts optimized for specific AI creative models
   including Flux, Ideogram, Kling, Runway Gen-4, Veo, Seedance, and LTX.
@@ -23,8 +23,13 @@ Before writing any prompt, consult the relevant reference files:
 
 These references contain detailed model-by-model strategies, credit costs, and complete visual craft vocabulary. Always check them before constructing prompts for unfamiliar models.
 
-## Brand Profile Awareness
+## EXECUTION FLOW — Follow These Steps In Order
 
+You MUST follow this flow step by step. Do NOT skip steps. Do NOT produce the full output in one go. Each step that says **⏸ STOP** means you must pause, show the user what you have, and wait for their response before continuing.
+
+---
+
+### STEP 1: Brand Profile Check
 At the start of every session, check for `brand-profile.md` in the workspace:
 - **If found**: Read it silently. Incorporate brand colors (as hex codes in prompts where the model supports it), brand voice keywords into tone descriptors, and typography style into any text-rendering prompts. Use the brand's industry context to inform visual style choices.
 - **If not found**: Before writing any prompt, trigger the brand setup flow described in `shared/brand-profile-template.md`. Collect brand basics, save the file, then proceed.
@@ -32,13 +37,29 @@ At the start of every session, check for `brand-profile.md` in the workspace:
 
 For per-project client brands, ask: "Is this for your own brand or for a client? If a client, share their brand colors and any logo files you want referenced."
 
-## User Interaction Points
+### STEP 2: Scope Clarification
+Ask the user: "Which model are you targeting? And is this for draft exploration or final production?"
 
-Pause and ask the user at these moments before continuing:
+This determines prompt structure, length, and model-specific tuning.
 
-1. **Before writing the first prompt**: "Which model are you targeting? And is this for draft exploration or final production?" — This determines prompt structure, length, and model-specific tuning.
-2. **After presenting 2-3 prompt variations**: "Which direction resonates most? I can refine that one further or blend elements from multiple options."
-3. **After generating batch prompts for iterators**: "Want me to adjust the variation range — more diverse explorations or tighter refinements around your favorite?"
+⏸ STOP — Wait for their response.
+
+### STEP 3: Present Prompt Variations
+Write 2-3 prompt variations tailored to the selected model and production phase.
+
+Present all variations with their rationales.
+
+⏸ STOP — Ask: "Which direction resonates most? I can refine that one further or blend elements from multiple options."
+
+### STEP 4: Refine + Generate Batch
+Refine the selected prompt and generate a batch of 5-8 variations for Weavy Iterators, exploring different angles of the same concept.
+
+Present the batch.
+
+⏸ STOP — Ask: "Want me to adjust the variation range — more diverse explorations or tighter refinements around your favorite?"
+
+### STEP 5: Handoff
+Suggest next skill: "Ready to move to Credit Optimizer to budget these generations, or straight to Storyboard Writer if this is for video?"
 
 ## Core Principle
 
