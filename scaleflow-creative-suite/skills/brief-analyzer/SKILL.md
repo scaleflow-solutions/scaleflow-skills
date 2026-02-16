@@ -26,28 +26,31 @@ You MUST follow this flow step by step. Do NOT skip steps. Do NOT produce the fu
 
 ---
 
-### STEP 1: Brand Profile Check
+### STEP 1: Brand Profile Check — REQUIRED
 
 Before doing anything else, check if `brand-profile.md` exists in the workspace.
 
+**This step is MANDATORY. The brand profile is NOT optional.** It determines colors, typography, and tone for the Creative Direction Document and every downstream skill (Moodboard Curator, Copy Engine, Prompt Architect, etc.). You CANNOT proceed without it.
+
 **If it does NOT exist:**
 
-Say: *"I don't have your brand on file yet. Let me set that up quickly so I never have to ask again."*
+Say: *"Before I can analyze the brief, I need to set up your brand profile. This is required — it shapes the Creative Direction Document and every skill after it. It only takes a minute and I'll never ask again."*
 
-Then ask these questions one at a time:
+Then ask these questions one at a time using the AskUserQuestion tool. Do NOT bundle them. Wait for each answer before asking the next:
 1. What is the brand name?
 2. What are the primary, secondary, and accent colors? (hex codes if you have them)
 3. What is the typography style? (modern / classic / bold / minimal / editorial)
 4. How would you describe the brand voice in 3-5 keywords? (e.g., bold, premium, confident)
 5. What industry or sector? (e.g., sports marketing, fashion, FMCG, tech)
+6. Do you have a logo file? If so, ask the user to upload it. Save it as `brand-logo.png` in the workspace root.
 
-After collecting answers, save `brand-profile.md` to the workspace root using the format from the brand profile template.
+After collecting ALL answers, save `brand-profile.md` to the workspace root using the format from the brand profile template.
 
-Say: *"Brand profile saved. I'll use this automatically on every future project."*
+Say: *"Brand profile saved. I'll use this automatically on every future project — your colors, typography, and voice will carry through every document and skill."*
 
-**If it DOES exist:** Read it silently. Do not mention it or ask any brand questions.
+**If it DOES exist:** Read it silently. Confirm it has all required fields (brand name, colors, typography, voice, industry). If any are missing, ask for only the missing fields before proceeding.
 
-**⏸ STOP — Do not proceed to Step 2 until brand profile is resolved.**
+**⏸ STOP — Do not proceed to Step 2 until the brand profile is fully resolved. If the user tries to skip this, explain that the brand profile is required because it affects the document styling, the moodboard, the copy tone, and all downstream production.**
 
 ---
 
@@ -117,7 +120,7 @@ Now produce the remaining sections of the document:
 
 Present the full document to the user.
 
-**⏸ STOP — Ask the user:** *"Here is the complete Creative Direction Document. Would you like me to visualize the production pipeline as an Excalidraw diagram showing the recommended Weavy node structure?"*
+**⏸ STOP — Ask the user:** *"Here is the full analysis. Before I generate the final document, would you like me to visualize the production pipeline as an Excalidraw diagram showing the recommended Weavy node structure?"*
 
 Wait for response.
 
@@ -136,7 +139,36 @@ If the user declines, skip this step.
 
 ---
 
-### STEP 5: Handoff Summary
+### STEP 5: Generate the Branded Creative Direction Document
+
+You MUST produce an actual .docx file as the final deliverable. Do NOT leave the document as chat text only. The user needs a real file they can share with their team or client.
+
+**Use the `docx` skill** to generate the document. Apply brand styling from the brand profile:
+- **Header/accent color**: Use the brand's primary color for headings and horizontal rules
+- **Secondary color**: Use for subheadings and table headers
+- **Typography**: Match the brand's typography style (if "modern" use a clean sans-serif, if "classic" use a serif, etc.)
+- **Logo**: If `brand-logo.png` exists in the workspace, place it in the document header
+- **Footer**: Include the brand name, project name, and date
+
+The document must include ALL sections produced in Steps 2 and 3:
+1. Campaign Overview
+2. Deliverables Checklist (as a formatted table)
+3. Key Messages & Tone of Voice
+4. Brand Constraints
+5. Target Audience
+6. Timeline & Milestones (as a formatted table)
+7. Missing Information
+8. Weavy Pipeline Recommendations (as a formatted table)
+
+Save the file with a clear name: `[Brand]-[Campaign]-Creative-Direction.docx`
+
+Present the download link to the user.
+
+**⏸ STOP — Say:** *"Here is your branded Creative Direction Document. You can share this directly with your team or client."*
+
+---
+
+### STEP 6: Handoff Summary
 
 End with a brief handoff message:
 
