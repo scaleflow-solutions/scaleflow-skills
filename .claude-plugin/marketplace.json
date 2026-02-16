@@ -13,7 +13,7 @@
     {
       "name": "scaleflow-production-ops",
       "source": "./scaleflow-production-ops",
-      "description": "Production operations: credit budgeting, creative QA, export specs, and SOP documentation"
+      "description": "Production operations: Weavy workflow design, credit budgeting, creative QA, export specs, and SOP documentation"
     },
     {
       "name": "scaleflow-client-delivery",

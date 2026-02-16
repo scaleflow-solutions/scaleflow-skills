@@ -1,12 +1,16 @@
-# Creative Direction Document Template
+# [Brand Name] — [Campaign Name] Creative Direction
 
-Use this structure for every brief analysis output.
+**Brand Colors:** Primary [#hex] | Secondary [#hex] | Accent [#hex]
+**Typography:** [style]
+**Brand Voice:** [keywords]
+**Logo:** [brand-assets/logo.png or "not provided"]
+**Date:** [date]
 
 ---
 
 ## CAMPAIGN OVERVIEW
 
-[2-3 sentences: client, brand, campaign objective, core message, high-level scope]
+[2-3 sentences: client, brand, campaign objective, core message, high-level scope. Written in the brand's voice.]
 
 ---
 
@@ -14,7 +18,7 @@ Use this structure for every brief analysis output.
 
 | Deliverable | Format | Dimensions / Duration | Platform | Priority |
 |---|---|---|---|---|
-| [Name] | [Static/Video/3D] | [WxH or duration] | [Platform] | [High/Med/Low] |
+| [Name] | [Static / Video / 3D] | [WxH or duration] | [Platform] | [High / Med / Low] |
 
 ---
 
@@ -33,8 +37,8 @@ Use this structure for every brief analysis output.
 
 ## BRAND CONSTRAINTS
 
-**Colors:** [Hex codes and names if available]
-**Typography:** [Font families or style direction]
+**Colors:** [Hex codes from brand profile]
+**Typography:** [From brand profile]
 **Logo:** [Placement rules, minimum size, clear space]
 **Mandatory elements:** [What MUST appear]
 **Restrictions:** [What must NOT appear]
@@ -75,4 +79,14 @@ Questions to send back to the client:
 
 ## WEAVY PIPELINE RECOMMENDATIONS
 
-[Per deliverable: recommended model, estimated credits, any special considerations]
+| Deliverable | Recommended Model | Est. Credits / Generation | Iterations (Draft + Final) | Total Credits | Rationale |
+|---|---|---|---|---|---|
+| [deliverable] | [model] | [credits] | [count] | [total] | [why this model] |
+
+**Budget Summary:**
+- Total estimated credits: [number]
+- Draft phase: [number] credits
+- Final production: [number] credits
+- Savings strategy: [recommendation]
+
+*Credit costs sourced from weavy.ai/pricing on [date]. Verify before production.*

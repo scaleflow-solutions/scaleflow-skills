@@ -1,0 +1,7 @@
+# validate_copy_lengths.py
+# -----------------------
+# No external dependencies required. The script uses only the Python standard
+# library (argparse, json, sys).
+#
+# If you extend this project, pin new dependencies here, e.g.:
+# rich>=13.0,<14
