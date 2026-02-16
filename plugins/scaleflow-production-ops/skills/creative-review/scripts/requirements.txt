@@ -1,0 +1,4 @@
+# ScaleFlow Creative Review - Python Dependencies
+# Install with: pip install -r requirements.txt --break-system-packages
+
+Pillow>=10.0.0          # Image dimension checks, resolution validation, format verification

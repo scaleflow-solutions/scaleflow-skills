@@ -1,0 +1,8 @@
+{
+  "name": "scaleflow-creative-suite",
+  "description": "Core creative pipeline skills for AI-assisted campaign production. Includes brief analysis, copywriting, visual direction, prompt engineering for all major AI models, and video storyboarding.",
+  "version": "1.0.0",
+  "author": {
+    "name": "ScaleFlow"
+  }
+}

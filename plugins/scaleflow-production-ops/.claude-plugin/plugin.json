@@ -1,0 +1,8 @@
+{
+  "name": "scaleflow-production-ops",
+  "description": "Production operations skills for AI creative workflows. Includes credit budget optimization, creative QA review, export specifications, and standard operating procedure documentation.",
+  "version": "1.0.0",
+  "author": {
+    "name": "ScaleFlow"
+  }
+}

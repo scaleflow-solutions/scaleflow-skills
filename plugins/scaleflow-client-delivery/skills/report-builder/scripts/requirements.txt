@@ -1,0 +1,5 @@
+# ScaleFlow Report Builder - Python Dependencies
+# Install with: pip install -r requirements.txt --break-system-packages
+
+Pillow>=10.0.0          # Image processing for report visuals
+matplotlib>=3.8.0       # Chart generation: credit usage, timeline, performance metrics

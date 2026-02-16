@@ -1,0 +1,8 @@
+{
+  "name": "scaleflow-client-delivery",
+  "description": "Client-facing delivery skills for creative agencies. Includes presentation deck creation and post-project reporting with resource analysis and optimization recommendations.",
+  "version": "1.0.0",
+  "author": {
+    "name": "ScaleFlow"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "scaleflow-skills",
+  "owner": {
+    "name": "ScaleFlow",
+    "email": "skills@scaleflow.ai"
+  },
+  "plugins": [
+    {
+      "name": "scaleflow-creative-suite",
+      "source": {
+        "source": "github",
+        "repo": "scaleflow/scaleflow-creative-suite"
+      },
+      "description": "Core creative pipeline: brief analysis, copywriting, visual direction, AI prompt engineering, and video storyboarding",
+      "version": "1.0.0"
+    },
+    {
+      "name": "scaleflow-production-ops",
+      "source": {
+        "source": "github",
+        "repo": "scaleflow/scaleflow-production-ops"
+      },
+      "description": "Production operations: credit budgeting, creative QA, export specs, and SOP documentation",
+      "version": "1.0.0"
+    },
+    {
+      "name": "scaleflow-client-delivery",
+      "source": {
+        "source": "github",
+        "repo": "scaleflow/scaleflow-client-delivery"
+      },
+      "description": "Client delivery: presentation decks and post-project reporting",
+      "version": "1.0.0"
+    }
+  ]
+}

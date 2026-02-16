@@ -1,0 +1,4 @@
+# ScaleFlow Asset Spec - Python Dependencies
+# Install with: pip install -r requirements.txt --break-system-packages
+
+Pillow>=10.0.0          # Verify exported asset dimensions, validate formats, check resolution

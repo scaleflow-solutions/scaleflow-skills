@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "gmail": {
+      "description": "Optional. Allows pulling client briefs directly from the user's Gmail inbox instead of requiring copy-paste. If not connected, the skill works normally with manual brief input.",
+      "required": false,
+      "capabilities": ["search", "read_thread", "summarize"]
+    }
+  }
+}

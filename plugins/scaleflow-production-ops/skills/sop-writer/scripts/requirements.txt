@@ -1,0 +1,4 @@
+# ScaleFlow SOP Writer - Python Dependencies
+# Install with: pip install -r requirements.txt --break-system-packages
+
+Pillow>=10.0.0          # Process workflow screenshots if provided

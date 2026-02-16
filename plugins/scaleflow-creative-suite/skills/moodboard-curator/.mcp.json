@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "cloudinary": {
+      "description": "Optional. Allows searching the agency's Cloudinary asset library for existing visual references, brand images, and previous campaign assets. If not connected, the skill generates moodboard descriptions from the brief and brand profile alone.",
+      "required": false,
+      "capabilities": ["list_images", "search", "download_asset"]
+    }
+  }
+}
